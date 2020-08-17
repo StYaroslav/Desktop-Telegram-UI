@@ -1,2 +1,2 @@
-# Web-Telegram-UI
-A UI of telegram for web using obly css/html
+# Desktop-Telegram-UI
+A UI of telegram's desktop version using only css/html
