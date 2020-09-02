@@ -10,13 +10,13 @@ body {
 
 input[type=text] {
     padding: 8px;
-    width: 90%;
     font-size: 13px;
     background-color: gray;
     border-radius: 3px;
     border-style: none;
     text-decoration-color: lightgray;
     text-indent: 4px;
+    flex: 1;
 }
 
 input[type=submit] {
@@ -78,6 +78,17 @@ input:focus::-webkit-input-placeholder {
 
 .channel-item {
     background-color: white;
-    padding: 20px;
     border-bottom: 1px solid black;
+    display: flex;
+    justify-content: start;
+}
+
+.channel-photo {
+    background-color: red;
+    padding: 20px;
+}
+
+.channel-preview-info {
+    flex-grow: 1;
+    background-color: blue;
 }
