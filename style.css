@@ -57,8 +57,7 @@ input:focus::-webkit-input-placeholder {
 .container {
     background-color: rgb(40, 46, 51);
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
 }
 
 .menu-and-search-bar {
@@ -77,17 +76,6 @@ input:focus::-webkit-input-placeholder {
     min-width: 0;
 }
 
-.channels-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.channel-scrollable-content {
-    flex-grow: 1;
-    overflow: auto;
-}
-
 .search-bar {
     align-self: center;
     flex-grow: 1;
@@ -98,6 +86,11 @@ input:focus::-webkit-input-placeholder {
     align-self: center;
     margin: 7px;
     padding: 9px 10px 7px;
+}
+
+.channel-items-wrapper {
+    height: 100%;
+    overflow: auto;
 }
 
 .channel-item:hover {
@@ -157,9 +150,9 @@ input:focus::-webkit-input-placeholder {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex: 0 0 90px;
+    flex: 0 0 10%;
     flex-grow: 1;
-    margin-right: 4px;
+    margin-right: 3px;
 }
 
 .channel-timestamp {
