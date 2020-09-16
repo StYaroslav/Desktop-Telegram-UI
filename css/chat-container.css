@@ -1,0 +1,237 @@
+.main-page-container {
+    display: flex;
+    color: white;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.main-page-header {
+    background-color: rgb(40, 46, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.channel-dialog-info {
+    line-height: 1.6;
+}
+
+.channel-dialog-name {
+    padding: 0 12px 1px;
+}
+
+.channel-dialog-time {
+    padding: 0 12px 1px;
+    color: rgb(141, 147, 158);
+}
+
+.channel-work {
+    display: flex;
+    align-self: center;
+}
+
+.channel-work div{
+    font-size: 17px;
+    width: 38px;
+    text-align: center;
+}
+
+.main-page-chat {
+    background-color: rgb(24, 25, 29);
+    flex: 1;
+    display: flex;
+}
+
+.main-page-footer {
+    background-color: rgb(40, 46, 51);
+    flex-shrink: 0;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    padding: 7px;
+    align-items: center;
+}
+
+.icon-color {
+    color: rgb(128, 128, 128);
+}
+
+.icon-color:hover {
+    color: rgb(220, 220, 220);
+}
+
+.clip-icon {
+    font-size: 23px;
+    width: 38px;
+    text-align: center;
+    padding: 4px 2px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    flex-basis: 38px;
+    margin-right: 5px;
+}
+
+.clip-color {
+    color: rgb(128, 128, 128);
+}
+
+.clip-color:hover {
+    color: rgb(220, 220, 220);
+}
+
+.message-input {
+    flex: 1;
+    width: 100%;
+}
+
+.message-input input {
+    background-color: rgb(40, 46, 51);
+    padding: 9px 3px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.smile-face-icon {
+    font-size: 23px;
+    width: 38px;
+}
+
+.smile-color {
+    color: rgb(128, 128, 128);
+}
+
+.smile-color:hover {
+    color: rgb(220, 220, 220);
+}
+
+.microphone-icon {
+    font-size: 23px;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.microphone-color {
+    color: rgb(128, 128, 128);
+}
+
+.microphone-color:hover {
+    color: rgb(220, 220, 220);
+}
+
+.main-page-chat {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-page-scrollbox {
+    overflow: auto;
+    visibility: hidden;
+    padding-bottom: 8px;
+    margin-right: 5px;
+}
+
+.main-page-scrollbox-content,
+.main-page-scrollbox:hover {
+    visibility: visible;
+}
+
+.main-page-scrollbox::-webkit-scrollbar {
+    width: 6px;
+}
+
+.main-page-scrollbox::-webkit-scrollbar-thumb {
+    background: rgb(88, 89, 90);
+    border-radius: 15px;
+}
+
+.main-page-scrollbox::-webkit-scrollbar-track {
+    background: rgb(45, 46, 48);
+    border-radius: 15px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.main-page-scrollbox::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(94, 94, 95);
+}
+
+.main-page-scrollbox::-webkit-scrollbar-track:hover {
+    background-color: rgb(55, 56, 58);
+}
+
+.day-header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    position: -webkit-sticky;
+}
+
+.day {
+    text-align: center;
+    background-color: rgb(47, 52, 59);
+    min-width: 10px;
+    padding: 6px 15px;
+    margin: 10px;
+    border-radius: 12px;
+    align-self: center;
+}
+
+.my-message {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+    padding: 6px 4px 6px;
+    justify-content: flex-end;
+}
+
+.my-message-content {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(42, 47, 51);
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    max-width: 45%;
+}
+
+.partner-message {
+    display: flex;
+    margin-left: 5px;
+    padding: 6px 4px 4px;
+    justify-content: flex-start;
+}
+
+.partner-message-content {
+    display: flex;
+    background-color: rgb(42, 47, 51);
+    padding: 5px 5px 5px 10px;
+    justify-content: flex-start;
+    border-radius: 5px;
+    max-width: 45%;
+}
+
+.message-text {
+    align-self: center;
+}
+
+.message-timestamp {
+    align-self: flex-end;
+    margin: 7px 7px 0 7px;
+    color: rgb(141, 147, 158);
+}
+
+.my-message .read-message {
+    background-image: url("../images/read-message.ico");
+    height: 16px;
+    align-self: flex-end;
+    width: 14px
+}

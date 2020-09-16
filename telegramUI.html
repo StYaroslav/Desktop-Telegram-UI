@@ -2,215 +2,437 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/channels.css">
+    <link rel="stylesheet" type="text/css" href="css/chat-container.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="shortcut icon" href="images/telegram-logo.ico">
     <meta charset="UTF-8">
     <title>Telegram</title>
-    <link rel="shortcut icon" href="images/telegram-logo.ico" />
 </head>
 <body>
-    <div class="container">
-        <div class="channels">
-            <div class="menu-and-search-bar">
-                <div class="menu-button">
-                    <input type="submit" value="">
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search"/>
-                </div>
+<div class="container">
+    <div class="channels">
+        <div class="menu-and-search-bar">
+            <div class="menu-button">
+                <input type="submit" value="">
             </div>
-            <div class="channel-items-wrapper">
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/tut-by-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
+            <div class="search-bar">
+                <input type="text" class="search-bar-input" placeholder="Search"/>
             </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/dima-avatar.png)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <strong class="channel-name">Дима</strong>
-                        <div class="read-message"></div>
-                        <span class="channel-timestamp">Tue</span>
-                    </div>
-                    <div class="channel-message">
-                        <span>You:</span> That's sound like a great idea!
+        </div>
+        <div class="channel-items-wrapper">
+            <div class="channel-scrollable-wrapper">
+                <div class="channel-scrollbox" tabindex="0">
+                    <div class="channel-scrollbox-content">
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/tut-by-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/dima-avatar.png)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <strong class="channel-name">Дима</strong>
+                                    <div class="read-message"></div>
+                                    <span class="channel-timestamp">Tue</span>
+                                </div>
+                                <div class="channel-message">
+                                    <span>You:</span> That's sound like a great idea!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo"
+                                 style="background-image: url(images/bsuir-group-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="group-channel-photo"></div>
+                                    <strong class="channel-name">BSUIR || 3rd course</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/pavel-avatar.png)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <strong class="channel-name">Pavel</strong>
+                                    <div class="unread-message"></div>
+                                    <span class="channel-timestamp">Mon</span>
+                                </div>
+                                <div class="channel-message">
+                                    <span>You:</span> Wanna play ps4 today's evening?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item selected-channel">
+                            <div class="channel-photo"
+                                 style="background-image: url(images/vip-person-avatar.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <strong class="channel-name">VIP dialog</strong>
+                                    <span class="channel-timestamp">12:05</span>
+                                </div>
+                                <div class="channel-message">I have a great idea to get rich. All we need is a lot of
+                                    money
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-item">
+                            <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
+                            <div class="channel-preview-info">
+                                <div class="channel-header">
+                                    <div class="public-channel-photo"></div>
+                                    <strong class="channel-name">TUT.BY новости</strong>
+                                    <span class="channel-timestamp">17:52</span>
+                                </div>
+                                <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae
+                                    fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/bsuir-group-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="group-channel-photo"></div>
-                        <strong class="channel-name">BSUIR || 3rd course</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/pavel-avatar.png)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <strong class="channel-name">Pavel</strong>
-                        <div class="unread-message"></div>
-                        <span class="channel-timestamp">Mon</span>
-                    </div>
-                    <div class="channel-message">
-                        <span>You:</span> Wanna play ps4 today's evening?
-                    </div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item selected-channel">
-                <div class="channel-photo" style="background-image: url(images/vip-person-avatar.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <strong class="channel-name">VIP dialog</strong>
-                        <span class="channel-timestamp">12:05</span>
-                    </div>
-                    <div class="channel-message">I have a great idea to get rich. All we need is a lot of money</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
-            <div class="channel-item">
-                <div class="channel-photo" style="background-image: url(images/channel-photo.jpg)"></div>
-                <div class="channel-preview-info">
-                    <div class="channel-header">
-                        <div class="public-channel-photo"></div>
-                        <strong class="channel-name">TUT.BY новости</strong>
-                        <span class="channel-timestamp">17:52</span>
-                    </div>
-                    <div class="channel-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
+    <div class="main-page-container">
+        <div class="main-page-header">
+            <div class="channel-dialog-info">
+                <div class="channel-dialog-name">
+                    VIP dialog
+                </div>
+                <div class="channel-dialog-time">
+                    last seen 23 minutes ago
+                </div>
+            </div>
+            <div class="channel-work">
+                <div class="channel-work-phone-icon"><i class="fas fa-phone-alt icon-color"></i></div>
+                <div class="channel-work-search-icon"><i class="fas fa-search icon-color"></i></div>
+                <div class="channel-work-info-icon"><i class="fas fa-columns icon-color"></i></div>
+                <div class="channel-work-menu-icon"><i class="fas fa-ellipsis-v icon-color"></i></div>
+            </div>
+        </div>
+        <div class="main-page-chat">
+            <div class="main-page-scrollbox" tabindex="0">
+                <div class="main-page-scrollbox-content">
+                    <div class="day-header">
+                        <div class="day">September 12</div>
+                    </div>
+                    <div class="my-message">
+                        <div class="my-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                            <div class="message-timestamp">17:42</div>
+                            <div class="read-message"></div>
+                        </div>
+                    </div>
+                    <div class="partner-message">
+                        <div class="partner-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                            <div class="message-timestamp">17:44</div>
+                        </div>
+                    </div>
+                    <div class="partner-message">
+                        <div class="partner-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </div>
+                            <div class="message-timestamp">17:44</div>
+                        </div>
+                    </div>
+                    <div class="my-message">
+                        <div class="my-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor
+                                in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </div>
+                            <div class="message-timestamp">17:48</div>
+                            <div class="read-message"></div>
+                        </div>
+                    </div>
+                    <div class="my-message">
+                        <div class="my-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor
+                                in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </div>
+                            <div class="message-timestamp">17:48</div>
+                            <div class="read-message"></div>
+                        </div>
+                    </div>
+                    <div class="my-message">
+                        <div class="my-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor
+                                in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </div>
+                            <div class="message-timestamp">17:48</div>
+                            <div class="read-message"></div>
+                        </div>
+                    </div>
+                    <div class="day-header">
+                        <div class="day">Today</div>
+                    </div>
+                    <div class="partner-message">
+                        <div class="partner-message-content">
+                            <div class="message-text">Wow, very interesting messages :)
+                            </div>
+                            <div class="message-timestamp">12:05</div>
+                        </div>
+                    </div>
+                    <div class="partner-message">
+                        <div class="partner-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </div>
+                            <div class="message-timestamp">12:33</div>
+                        </div>
+                    </div>
+                    <div class="my-message">
+                        <div class="my-message-content">
+                            <div class="message-text">Yeah</div>
+                            <div class="message-timestamp">14:42</div>
+                            <div class="read-message"></div>
+                        </div>
+                    </div>
+                    <div class="partner-message">
+                        <div class="partner-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </div>
+                            <div class="message-timestamp">14:44</div>
+                        </div>
+                    </div>
+                    <div class="partner-message">
+                        <div class="partner-message-content">
+                            <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud
+                            </div>
+                            <div class="message-timestamp">17:55</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-page-footer">
+            <div class="clip-icon"><i class="fas fa-paperclip clip-color"></i></div>
+            <div class="message-input">
+                <input type="text" class="message-input-field" placeholder="Write a message..."/>
+            </div>
+            <div class="smile-face-icon"><i class="far fa-smile smile-color"></i></div>
+            <div class="microphone-icon"><i class="fas fa-microphone microphone-color"></i></div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
